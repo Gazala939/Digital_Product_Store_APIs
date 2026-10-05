@@ -102,7 +102,6 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 ```
 
-Do not commit real Stripe secret keys to GitHub.
 
 ---
 
@@ -307,28 +306,7 @@ Admin pages are protected using the user's role.
 
 ---
 
-# Database Relationships
 
-The application uses the following relationships:
-
-```text
-User
- ├── Cart
- └── Orders
-
-Cart
- └── CartItems
-
-Product
- ├── CartItems
- └── OrderItems
-
-Order
- ├── OrderItems
- └── Payment
-```
-
----
 
 # Testing
 
